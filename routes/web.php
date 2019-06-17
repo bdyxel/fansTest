@@ -11,3 +11,10 @@
 |
 */
 
+//php artisan route:list
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/userInfo', 'HomeController@userInfo')->name('userInfo');
+Route::post('/userInfo', 'HomeController@userInfoStore')->name('userInfoStore');
+
