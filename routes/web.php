@@ -11,7 +11,3 @@
 |
 */
 
-Route::get('/yy', 'YyController@reg');
-Route::get('/', function () {
-    return view('welcome');
-});
